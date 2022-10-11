@@ -9,7 +9,10 @@ function App() {
     const router = createBrowserRouter([
       {path: '/', element: <Home></Home>},
       {path: '/statistics', element: <Statistics></Statistics> },
-      {path: '/blog', element: <Blog></Blog>}
+      {path: '/blog', element: <Blog></Blog>},
+      {path: '*', element: <div>
+        <h1>This page does not exist!!!</h1>
+      </div>}
   ])
   return (
     <div>
