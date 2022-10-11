@@ -2,9 +2,9 @@
 Live Site: https://candid-paletas-40a0e6.netlify.app/
 
 
-## QUIZ API LINK:
-* Get all quiz topics: https://openapi.programming-hero.com/api/quiz
+## Description: 
+* In this project I get all quiz topics from the link https://openapi.programming-hero.com/api/quiz and show them in the home page.
 
-* Get topic details by topic id: https://openapi.programming-hero.com/api/quiz/${id}
+* Under each topic, Get topic details by topic id from this dynamic link https://openapi.programming-hero.com/api/quiz/${id} and set quizes.
 
-* Example: https://openapi.programming-hero.com/api/quiz/1
+* I also make a chart from the data and write some blog. 
