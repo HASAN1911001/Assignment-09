@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Skill.css';
 
 const Skill = (props) => {
-    const {name,logo,total} = props.skill;
+    const {id, name,logo,total} = props.skill;
    
     return(
         <div  className ='skill-container'>
@@ -11,9 +12,7 @@ const Skill = (props) => {
                 <h3>{name}</h3>
                 <h6>Total: {total} Quizs</h6> 
             </div>
-            <button  className='btn-skill'>
-                    <p>View Quiz</p>
-            </button>
+            <Link to={`/quiz/${id}`} className='link'> View Quiz</Link>
         </div>  
      );
 };
