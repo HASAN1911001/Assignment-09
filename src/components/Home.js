@@ -5,35 +5,27 @@ import Navigation from "./Navigation";
 
 
 const Home = () => {
-    const [home, setHome] = useState([]);
-    const [clicked, setClicked] = useState([]);
+    const [skills, setSkills] = useState([]);
 
     useEffect( () => {
-        fetch('Home.json')
+        fetch('https://openapi.programming-hero.com/api/quiz')
         .then(res=> res.json())
-        .then(data=> setHome(data));
+        .then(data=> setSkills(data.data));
     }, [])
-
-    const handleClick = (home) =>{
-        
-        const selected = [...clicked, home];
-        setClicked(selected);
-    }
 
     return(
         <div>
             <Navigation></Navigation>
-            <div className='Home'>
-                <div className="Home-container">
-                    {
-                    home.map(habit => <Skill 
-                        key={habit.id}
-                        habit={habit}
-                        handleClick={handleClick}
-                    ></Skill>)
-                    }
-                </div>
-            </div>   
+            <div className="home">
+            {
+                skills.map(skill => 
+                    <Skill 
+                    key={skill.id}
+                    skill={skill}></Skill>
+                    )
+            }
+            </div>
+            
         </div>
         
      );

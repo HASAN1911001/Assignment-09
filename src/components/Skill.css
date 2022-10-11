@@ -1,6 +1,7 @@
 .skill img{
     width: 250px;
     height: 250px; 
+    background-color: black;
  }
  
  .skill-container{
@@ -8,6 +9,10 @@
      height: 409px;
      border: 1px solid #95A0A7;
      border-radius: 8px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+     margin-bottom: 50px;
  }
  
  .btn-skill{

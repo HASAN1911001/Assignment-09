@@ -7,7 +7,7 @@ function Navigation() {
     return (
         <div className='nav'>
             <h1>Check Skills</h1>
-            <div className='link'>
+            <div className='Link'>
                 <Link className='link' to = '/'>Topics</Link>
                 <Link className='link' to = '/blog'>Blog</Link>
                 <Link className='link' to = '/statistics'>Statistics</Link>
