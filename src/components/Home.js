@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Skill from "./Skill";
 import './Home.css';
 import Navigation from "./Navigation";
+import Header from "./Header";
 
 
 const Home = () => {
@@ -16,6 +17,10 @@ const Home = () => {
     return(
         <div>
             <Navigation></Navigation>
+            <div>
+                 <Header></Header>
+            </div>
+  
             <div className="home">
             {
                 skills.map(skill => 
