@@ -1,0 +1,15 @@
+@media screen and (min-width: 500px)
+{
+.Home{
+    display: grid;
+    grid-template-columns:4fr 1fr;
+}
+
+.Home-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+}
+

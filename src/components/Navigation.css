@@ -1,0 +1,17 @@
+.nav{
+    height: 80px;
+    background-color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px;
+
+}
+
+.link{
+    color:red;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 36px;
+}

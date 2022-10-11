@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './Components/Home/Home';
-import Bari from './Components/Home/Bari';
+import React from 'react'
+import Home from './components/Home'
+import Navigation from './components/Navigation'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Statistics from './components/Statistics'
+import Blog from './components/Blog'
 
 function App() {
-  const router = createBrowserRouter([
-    {path: '/', element: <div>This is default page</div>},
-    {path: '/home', element: 
-      <div>
-        <Home></Home> 
-        <Bari></Bari>
-      </div>},
-    {path: 'about', element: <div>About</div>},
-
+    const router = createBrowserRouter([
+      {path: '/', element: <Home></Home>},
+      {path: '/statistics', element: <Statistics></Statistics> },
+      {path: '/blog', element: <Blog></Blog>}
   ])
-
   return (
-    <div className="App">
-      <RouterProvider router={router}></RouterProvider>
+    <div>
+
+        <RouterProvider router={router}></RouterProvider>
     </div>
   );
+
 }
 
-export default App;
+export default App
