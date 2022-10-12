@@ -1,3 +1,4 @@
+/* Media Query for mobile */
 @media (min-width: 300px) and (max-width: 767px) {
     .home{
         display: grid;

@@ -8,15 +8,17 @@ import Skill from './Skill';
 function Quiz() {
     const data = useLoaderData();
     let quiz = data.data.questions;
+    console.log(data.data.questions);
   return (
     <div>
         <Navigation></Navigation>
         <h1 style={{textAlign:'center', margin:'50px'}}>{data.data.name} Quiz</h1>
         {
-            quiz.map(q => 
-                    <Questions>
-                        key={q.id}
-                        questions = {q}
+
+            quiz.map(question => 
+                    <Questions 
+                     key={question.id}
+                     question={question}>
                     </Questions>
 
                 )

@@ -17,5 +17,4 @@ const Skill = (props) => {
      );
 };
 
-
 export default Skill;

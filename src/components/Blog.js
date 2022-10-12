@@ -46,11 +46,10 @@ function Blog() {
             </p>
             <p>
             There are only three possibilities when we can useRef in our component -
-
-                <p>--Managing focus, text selection, or media playback. </p>
-                <p> --Integrating with third-party DOM libraries. </p>
-                <p>--Triggering imperative animations. </p>
             </p>
+            <p>--Managing focus, text selection, or media playback. </p>
+            <p>--Integrating with third-party DOM libraries. </p>
+            <p>--Triggering imperative animations. </p>
         </div>
     </div>
   )

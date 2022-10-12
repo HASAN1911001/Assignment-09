@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navigation from './Navigation'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis,ResponsiveContainer } from 'recharts';
-import './statistics.css';
+
 
 function Statistics() {
     const [skills, setSkills] = useState([]);
@@ -21,7 +21,6 @@ function Statistics() {
     //     }
     //     data.push(d);
     // })
-
   return (
     <div>
         <Navigation></Navigation>

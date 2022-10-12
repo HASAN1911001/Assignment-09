@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
-import Home from './Home';
 
 function Navigation() {
     return (

@@ -4,7 +4,6 @@ import './Home.css';
 import Navigation from "./Navigation";
 import Header from "./Header";
 
-
 const Home = () => {
     const [skills, setSkills] = useState([]);
 

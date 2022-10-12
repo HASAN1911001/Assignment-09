@@ -8,15 +8,11 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 //toast.configure()
 function Questions(props) {
     
-    const {question, options, correctAnswer} = props.children[3];
+    const {question, options, correctAnswer} = props.question;
 
     const notify = () => {
         toast(correctAnswer);
     }
-    const Q = () => {
-        toast();
-    }
-
 
   return (
     <div style={{margin:'100px'}}>
@@ -26,10 +22,10 @@ function Questions(props) {
         </div>
         
         {
-            options.map(option => 
-            <div>
+            options.map((option, i) => 
+            <div key={i}>
                 <p id='opt' onClick={e => {
-                    if(e.target.innerText == correctAnswer)
+                    if(e.target.innerText.replace(/\s/g, '') == correctAnswer.replace(/\s/g, ''))
                     {
                         toast("Correct");
                     }
