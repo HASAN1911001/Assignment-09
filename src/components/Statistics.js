@@ -30,7 +30,7 @@ function Statistics() {
         {/* <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
              <h1> Summary of the quiz </h1>
         </div> */}
-        <ResponsiveContainer width="100%" height={600}>
+        <ResponsiveContainer width="100%" height={500}>
             <LineChart  data={data}>
                 <Line type="monotone" dataKey="total" stroke="#8884d8" />
                 <CartesianGrid stroke="#ccc" />

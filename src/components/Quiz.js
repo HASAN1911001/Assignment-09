@@ -11,6 +11,7 @@ function Quiz() {
   return (
     <div>
         <Navigation></Navigation>
+        <h1 style={{textAlign:'center', margin:'50px'}}>{data.data.name} Quiz</h1>
         {
             quiz.map(q => 
                     <Questions>
