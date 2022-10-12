@@ -1,6 +1,9 @@
 import React from 'react'
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 //toast.configure()
 function Questions(props) {
@@ -17,9 +20,9 @@ function Questions(props) {
 
   return (
     <div style={{margin:'100px'}}>
-        <div style={{display: 'flex'}} className='question'>
+        <div style={{display: 'flex', alignItems: 'center'}} className='question'>
             <h3>{question}</h3>
-            <p onClick={notify}>@</p>
+            <FontAwesomeIcon onClick={notify} icon={faEye} />
         </div>
         
         {
