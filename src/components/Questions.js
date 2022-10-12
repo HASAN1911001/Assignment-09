@@ -16,7 +16,7 @@ function Questions(props) {
 
 
   return (
-    <div style={{margin:'30px'}}>
+    <div style={{margin:'100px'}}>
         <div style={{display: 'flex'}} className='question'>
             <h3>{question}</h3>
             <p onClick={notify}>@</p>

@@ -27,7 +27,8 @@ function App() {
         // }
         element: <Quiz></Quiz>},
       {path: '*', element: <div>
-        <h1>This page does not exist!!!</h1>
+        <h3 style={{textAlign:'center'}}>Rasta mapte vul korcho mama</h3>
+        <h1 style={{textAlign:'center', color:'red'}}>This page does not exist!!!</h1>
       </div>}
   ])
   return (
