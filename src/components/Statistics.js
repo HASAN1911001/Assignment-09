@@ -26,6 +26,10 @@ function Statistics() {
     <div>
         <Navigation></Navigation>
 
+        <h1 style={{textAlign: 'center'}}> Summary of the quiz </h1>
+        {/* <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
+             <h1> Summary of the quiz </h1>
+        </div> */}
         <ResponsiveContainer width="100%" height={600}>
             <LineChart  data={data}>
                 <Line type="monotone" dataKey="total" stroke="#8884d8" />
